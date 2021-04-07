@@ -5,6 +5,7 @@ window.onload = main;
 function main() {
     const graph = new Graph2D(document.getElementById('tester'));
     graph.draw();
+    
 }
 
 class Graph {

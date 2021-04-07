@@ -12,6 +12,6 @@ module.exports = {
             test: /\.js$/,
             loader: 'ify-loader'
         }
-        ]
-    },
+      ]
+  },
 };
