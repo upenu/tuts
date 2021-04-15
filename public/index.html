@@ -5,6 +5,46 @@
   </head>
   <body>
     <script src="dist/bundle.js"></script>
-    <div id='tester'></div>
+    <div id='plot2d'></div>
+    Let 
+    be distinct numbers relatively prime, for any integers 
+    there’s an integer  such that
+
+    
+    All the solutions of this system are congruent modulo 
+
+    nrich’s article on the chinese remainder illustrates the system of equations with a coordinate system in -dimensions, basically a number can represent a point in the coordinate system defined by the equation system and the point itself is a sum of unit vectors scaled by some amount
+
+    Example: Represent the number  in the coordinate system defined by the integers that belong to the set of integers ,  and  ( has  elements which are all the number in the range )
+
+    The statement above is equivalent to
+
+    
+    We can see that  is represented by the point 
+
+    What we want to do is the opposite, that is find the number whose representation in the coordinate system defined by the integers that belong to the set of integers 
+    results in the point 
+
+    What we can do is express these conditions as a sum of scaled unit vectors that belong to each of axis of the coordinate systems, this means that a point 
+    can be represented as
+
+    If we represent each point as 
+
+    
+    Let’s take the first term of the sum, 
+    is a number which must fulfill the following equivalences for each axis of the coordinate system
+
+    
+    From the system of equations above we can see that 
+    which means that 
+    is some multiple of the multiplication i.e. 
+
+    Given the fact that 
+    is relatively prime to 
+    the product has a modular multiplicative inverse which can be found using the extended euclidean algorithm, in fact we have to solve  of this equations each having the form
+
+    
+    Finally we have to plug these values into the equation 
+    <div id='plot3d'></div>
   </body>
 </html>
